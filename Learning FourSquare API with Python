@@ -1,0 +1,24 @@
+## Introduction
+
+In this lab, you will learn in details how to make calls to the Foursquare API for different purposes. You will learn how to construct a URL to send a request to the API to search for a specific type of venues, to explore a particular venue, to explore a Foursquare user, to explore a geographical location, and to get trending venues around a location. Also, you will learn how to use the visualization library, Folium, to visualize the results.
+
+import requests # library to handle requests
+import pandas as pd # library for data analsysis
+import numpy as np # library to handle data in a vectorized manner
+import random # library for random number generation
+
+!conda install -c conda-forge geopy --yes 
+from geopy.geocoders import Nominatim # module to convert an address into latitude and longitude values
+
+# libraries for displaying images
+from IPython.display import Image 
+from IPython.core.display import HTML 
+    
+# tranforming json file into a pandas dataframe library
+from pandas.io.json import json_normalize
+
+!conda install -c conda-forge folium=0.5.0 --yes
+import folium # plotting library
+
+print('Folium installed')
+print('Libraries imported.')
